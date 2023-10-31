@@ -1,0 +1,19 @@
+/* Regular palette */
+@define-color black #615e85;
+@define-color red #d9a3cd;
+@define-color green #a3d1af;
+@define-color yellow #ebc3a7;
+@define-color blue #717fb0;
+@define-color magenta #9c8dc2;
+@define-color cyan #90b4de;
+@define-color white #e0e0dc;
+
+/* Bright Palette */
+@define-color brightBlack #adacc4;
+@define-color brightRed #ecd1e6;
+@define-color brightGreen #d1e8d7;
+@define-color brightYellow #f5e0d2;
+@define-color brightBlue #b8bfd7;
+@define-color brightMagenta #cdc6e0;
+@define-color brightCyan #c7d9ee;
+@define-color brightWhite #efefed;

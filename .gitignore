@@ -1,0 +1,18 @@
+#Exclude
+/*
+
+# Include
+!.gitignore
+!cava
+!hypr
+!kitty
+!mako
+!neofetch
+!rofi
+!scripts
+!swaylock
+!theme
+!Thunar
+!waybar
+!waypaper
+!yay

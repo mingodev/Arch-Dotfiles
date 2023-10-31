@@ -1,0 +1,184 @@
+@import url("/home/mingo/.config/theme/palettes/rosepine.css");
+
+@define-color brdrcolor alpha(@overlay, 0.8);
+@define-color bgcolor alpha(@base, 0.8);
+@define-color text @text;
+
+* {
+  color: @text;
+  transition: none;
+  box-shadow: none; 
+  font-size: 16px;
+  font-family: "JetBrainsMono Nerd Font";
+}
+
+window#waybar {
+    background-color: transparent;   
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+tooltip {
+    background: alpha(@bgcolor, 1);
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: @brdrcolor;
+    color: @text;
+    padding: 15px;
+    text-shadow: none;
+}
+
+button, label {
+    all: unset;
+}
+
+#custom-logo {
+    background: @bgcolor;
+    color: @text;
+    font-size: 25px;
+    margin: 0;
+    padding: 0 12px;
+}
+
+#workspaces {
+    background: @bgcolor;
+    margin: 0;
+    padding: 0 12px 0 5px;
+}
+
+#workspaces label {
+    background-color: transparent;
+    margin: 0 6px;
+    font-size: 16px;
+    color: @text;
+}
+
+#workspaces .active label {
+    color: @pine;
+}
+
+#workspaces .urgent label {
+    color: @love;
+}
+
+#workspaces button:hover label {
+    color: @rose;
+}
+
+#custom-apps {
+    min-width: 20px;
+}
+
+#taskbar {
+  background: @bgcolor;
+  margin: 0;
+}
+
+#taskbar.empty {
+  min-width: 6px; 
+}
+
+#taskbar button {
+    border: 2px solid transparent;
+    margin: 6px;
+}
+
+#taskbar button.active {
+    background-color: alpha(@rose, 0.6);
+    border-radius: 10px;
+}
+ 
+#taskbar * {
+    min-width: 16px;
+}
+
+#mode,
+#battery,
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#bluetooth,
+#backlight,
+#temperature,
+#custom-notifications,
+#custom-apps,
+#custom-power {
+    color: @text;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px 12px;
+    background-color: @bgcolor;
+    border-color: @brdrcolor;
+    border-width: 2px;
+    border-style: solid;
+    border-right: 0;
+    border-left: 0;
+}
+
+/* With rounded left  */
+#custom-logo, 
+#custom-apps,
+#clock, 
+#custom-notifications, 
+#custom-apps {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-left: 10px;
+  background-color: @bgcolor;
+  border-color: @brdrcolor;
+  border-width: 2px;
+  border-style: solid;
+  border-right: 0;
+}
+
+/* With round right */
+#tray,
+#workspaces,
+#taskbar,
+#clock,
+#battery,
+#custom-power {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right: 10px;
+    background-color: @bgcolor;
+    border-color: @brdrcolor;
+    border-width: 2px;
+    border-style: solid;
+    border-left: 0;
+}
+
+/* Fix inconsistencies */
+#custom-logo {
+    margin-left: 0;
+}
+
+#clock {
+    border-left: 2px solid @brdrcolor;
+} 
+
+#battery {
+    margin-right: 0;
+    border-right: 2px solid @brdrcolor;
+}
+
+/* Classes */
+#custom-notifications.do-not-disturb,
+#pulseaudio.muted,
+#bluetooth.disabled,
+#network.disconnected,
+#temperature.critical
+{
+    color: @love;
+}
+
+#custom-apps {
+    padding: 0 6px 0 12px;
+}
+
+#custom-power {
+    padding: 0 12px 0 6px;
+}
