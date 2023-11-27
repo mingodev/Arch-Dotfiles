@@ -4,7 +4,7 @@
     "margin-left": 10,
     "margin-right": 10,
     "margin-bottom": 0,
-    "modules-left": ["custom/logo", "hyprland/workspaces", "custom/apps", "wlr/taskbar"],
+    "modules-left": ["custom/logo", "hyprland/workspaces", "custom/apps", "wlr/taskbar", "hyprland/window"],
     "modules-center": ["clock"],
     "modules-right": ["custom/notifications","pulseaudio","bluetooth", "network","backlight","battery"],
     "custom/logo": {
